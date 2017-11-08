@@ -1,0 +1,56 @@
+import Head from 'next/head'
+
+export default () => (
+  <div>
+    <Head>
+
+      <title>WeAreInfinite</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charSet="utf-8" />
+      <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"/>
+    </Head>
+    <style jsx global>{`
+     *{
+          padding:0;
+          margin:0;
+          box-sizzing: border-box;
+      }
+      html {
+        height: 100%;
+      }
+      body { 
+        display: flex;
+        align-items: center;
+        font-family: monospace;
+        justify-content: center;
+        background-color:#1d212b;
+      }
+      .thebox {
+        position: relative;
+        width: 30vw;
+        height: 30vw;
+        line-height: 30vw;
+        text-align: center;
+        color: #252B37;
+        background-color: #151823;
+        animation: textColor 10s ease infinite;
+        color: #ddd;
+        top:20%;
+        font-size:2.5em;
+        animation: textColor 10s ease infinite;
+      }
+
+      @keyframes textColor {
+        0% {
+          color: #7e0fff;
+        }
+        50% {
+          color: #0fffc1;
+        }
+        100% {
+          color: #7e0fff;
+        }
+      }
+    `}</style>
+  </div>
+)
