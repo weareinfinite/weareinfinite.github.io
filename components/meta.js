@@ -25,9 +25,20 @@ export default () => (
         justify-content: center;
         background-color:#1d212b;
       }
+
+      ::-moz-selection { /* Code for Firefox */
+        color: #7e0fff;
+        background: #0fffc1;
+    }
+    
+    ::selection {
+        color: #7e0fff; 
+        background: #0fffc1;
+    }
       .thebox {
         position: relative;
         width: 30vw;
+        min-width:300px;
         height: 30vw;
         line-height: 30vw;
         text-align: center;
@@ -38,6 +49,15 @@ export default () => (
         top:20%;
         font-size:2.5em;
         animation: textColor 10s ease infinite;
+      }
+
+      .about__box {
+        color: #7e0fff;
+        margin-top: 10px;
+        text-align: center;
+        font-size:1.2em;
+        width: 30vw;
+        min-width:300px;
       }
 
       @keyframes textColor {
