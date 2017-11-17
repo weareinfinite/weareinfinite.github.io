@@ -40,15 +40,16 @@ export default () => (
         width: 30vw;
         min-width:300px;
         height: 30vw;
-        line-height: 30vw;
-        text-align: center;
+        min-height:300px;
         color: #252B37;
         background-color: #151823;
         animation: textColor 10s ease infinite;
         color: #ddd;
-        top:20%;
         font-size:2.5em;
-        animation: textColor 10s ease infinite;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
       .about__box {
