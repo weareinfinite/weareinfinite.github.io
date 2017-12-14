@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/next start",
     "dev": "./node_modules/.bin/next dev",
-    "build": "./node_modules/.bin/next build",
-    "export": "./node_modules/.bin/next export"
+    "build": "NODE_ENV=production&& next build",
+    "export": "NODE_ENV=production&& next export"
   },
   "repository": {
     "type": "git",
