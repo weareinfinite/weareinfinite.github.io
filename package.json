@@ -24,6 +24,8 @@
   "dependencies": {
     "next": "^4.1.4",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-typist": "^2.0.4",
+    "vanilla-tilt": "^1.4.1"
   }
 }
